@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select, input {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+#graphCanvas {
+    display: block;
+    margin: 20px auto;
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+}
+
+#clock-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#clock {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    animation: clockAnimation 1s infinite alternate;
+}
+
+@keyframes clockAnimation {
+    from {
+        transform: scale(1);
+        color: #007bff;
+    }
+    to {
+        transform: scale(1.2);
+        color: #ff5722;
+    }
+}
+
+#recommendations {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    background: #fff3cd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#recommendations h2 {
+    color: #856404;
+}
+
+#recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+#recommendations li {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #856404;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    input, select, button {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    #graphCanvas {
+        height: 250px;
+    }
+}
